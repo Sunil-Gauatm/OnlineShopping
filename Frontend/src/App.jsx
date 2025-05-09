@@ -15,5 +15,4 @@ export default App
 
 
 
-AutoSlider.jsx
 
