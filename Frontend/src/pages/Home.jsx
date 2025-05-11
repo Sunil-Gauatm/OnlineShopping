@@ -11,6 +11,11 @@ import logo3 from "../assets/logo3.png";
 import logo4 from "../assets/logo4.png";
 import DealofMonth from "../components/DealofMonth";
 import NewArrivals from "../components/NewArrivals";
+import PeekyBlinder from "../assets/peaky.png";
+import { FaHandHoldingHeart } from "react-icons/fa";
+import Testimonial from "../components/Testimonial";
+
+import { FaAward } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -65,22 +70,100 @@ const Home = () => {
 
       {/* dealofMonth */}
       <div>
-      <DealofMonth/>
+        <DealofMonth />
       </div>
-
 
       {/* New Arrivals */}
       <div>
-        
-        <NewArrivals/>
+        <NewArrivals />
+      </div>
 
+      {/* /peakyblinder slider */}
 
+      <div className="flex w-full h-[25em] font-sans bg-white overflow-hidden">
+        {/* Left Section */}
+        <div className="relative w-1/2 bg-gray-00 flex items-center justify-center">
+          <img
+            src={PeekyBlinder} // Update this path
+            alt="Model"
+            className="max-h-[90%] object-contain z-10"
+          />
+
+          {/* Floating Labels */}
+        </div>
+
+        {/* Right Section with Slant */}
+        <div className="w-1/2 relative  bg-gray-100 transform -skew-x-[12deg]">
+          <div className="transform skew-x-[12deg] px-16 py-12 h-full flex flex-col justify-center">
+            <p className="text-[0.8rem] text-gray-500 mb-2 ">
+              Women Collection
+            </p>
+            <h1 className="text-5xl font-semibold text-gray-800 mb-4">
+              Peaky Blinders
+            </h1>
+
+            <h2 className="text-md font-medium mb-2 underline ">DESCRIPTION</h2>
+            <p className="text-gray-600 mb-6 leading-relaxed max-w-md text-[0.7rem]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Scelerisque duis ultrices sollicitudin aliquam sem. Scelerisque
+              duis ultrices sollicitudin. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Scelerisque duis.
+            </p>
+
+            <div className="mb-4">
+              <span className="text-sm text-gray-600 mr-2">Size:</span>
+              <button className="bg-black text-white px-4 py-1 rounded">
+                M
+              </button>
+            </div>
+
+            <div className="text-2xl font-bold text-gray-900 mb-4">$100.00</div>
+
+            <button className="bg-black text-white px-6 py-3 w-[15rem] rounded hover:bg-gray-800 transition">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* icons Section */}
+      <div className="px-50 py-10 flex flex-row gap-14 justify-center">
+        <div className="flex flex-row gap-2 items-center j">
+          <FaHandHoldingHeart className="text-[3rem]" />
+          <div className="flex flex-col">
+            <span className="text-[1.2rem] font-semibold"> High Quality </span>
+            <span className="text-[0.9rem]">crafted from top materials </span>
+          </div>
+        </div>
+
+        <div className="flex flex-row gap-2 items-center j">
+          <FaAward className="text-[3rem]" />
+          <div className="flex flex-col">
+            <span className="text-[1.2rem] font-semibold"> High Quality </span>
+            <span className="text-[0.9rem]">crafted from top materials </span>
+          </div>
+        </div>
+        <div className="flex flex-row gap-2 items-center j">
+          <FaAward className="text-[3rem]" />
+          <div className="flex flex-col">
+            <span className="text-[1.2rem] font-semibold"> High Quality </span>
+            <span className="text-[0.9rem]">crafted from top materials </span>
+          </div>
+        </div>
+        <div className="flex flex-row gap-2 items-center j">
+          <FaAward className="text-[3rem]" />
+          <div className="flex flex-col">
+            <span className="text-[1.2rem] font-semibold"> High Quality </span>
+            <span className="text-[0.9rem]">crafted from top materials </span>
+          </div>
+        </div>
       </div>
 
 
-
-
-
+      {/* Testimonial */}
+      <div>
+      <Testimonial/>
+      </div>
 
     </>
   );
