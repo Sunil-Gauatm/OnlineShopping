@@ -14,6 +14,7 @@ import NewArrivals from "../components/NewArrivals";
 import PeekyBlinder from "../assets/peaky.png";
 import { FaHandHoldingHeart } from "react-icons/fa";
 import Testimonial from "../components/Testimonial";
+import Footer from "../components/Footer";
 
 import { FaAward } from "react-icons/fa";
 
@@ -163,6 +164,12 @@ const Home = () => {
       {/* Testimonial */}
       <div>
       <Testimonial/>
+      </div>
+
+
+      {/* Footer */}
+      <div>
+        <Footer />
       </div>
 
     </>
