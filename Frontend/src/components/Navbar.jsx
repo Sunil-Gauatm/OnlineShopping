@@ -2,8 +2,9 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div>
-        <nav className='min-[1350px]:px-50 py-8 flex flex-row  items-center justify-between'>
+    <div >
+
+        <nav className='min-[1350px]:px-50   py-8 flex flex-row  items-center justify-between'>
             <div className='font-logo font-semibold text-[2.5rem] text-gray-700'>FASCO</div>
             <div className='flex flex-row gap-10 items-center cursor-default font-pop '>
                
